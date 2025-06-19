@@ -18,7 +18,7 @@ const Form = () => {
   const isMobile = useIsMobile();
   const defaultValues = {
     //Sekection
-    facultyselection: "",
+    facultySelection: "",
 
     // A. Candidate Information
     fullName: "",
@@ -205,7 +205,7 @@ const Form = () => {
                   <TextField
                     label="Date of Birth BS"
                     fullWidth
-                    placeholder="mm/yy/dddd"
+                    placeholder="dd/mm/yyyy"
                     type="text"
                     {...field}
                     error={!!errors.dobBS}
@@ -224,7 +224,7 @@ const Form = () => {
                   <TextField
                     label="Date of Birth AD"
                     fullWidth
-                    placeholder="mm/yy/dddd"
+                    placeholder="dd/mm/yyyy"
                     type="text"
                     {...field}
                     error={!!errors.dobAD}
@@ -1077,7 +1077,7 @@ const Form = () => {
                   <TextField
                     fullWidth
                     label="Year of completion"
-                    placeholder="mm/yy/dddd"
+                    placeholder="dd/mm/yyyy"
                     {...field}
                     error={!!errors.yearOfCompletion}
                     helperText={errors.yearOfCompletion?.message}
