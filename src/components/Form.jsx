@@ -611,12 +611,15 @@ const Form = () => {
                 <Controller
                   name="motherPermanentAddress"
                   control={control}
+                  rules={{ required: "Permanent Address is required" }}
+                  type="text"
                   render={({ field }) => (
                     <TextField
                       label="Permanent Address"
                       fullWidth
-                      type="text"
                       {...field}
+                      error={!!errors.motherPermanentAddress}
+                      helperText={errors.motherPermanentAddress?.message}
                     />
                   )}
                 />
@@ -722,7 +725,7 @@ const Form = () => {
               <Controller
                 name="localGuardianName"
                 control={control}
-                rules={"Local Gurdians Name is required"}
+                rules={{ required: "Local Gurdians Name is required" }}
                 render={({ field }) => (
                   <TextField
                     label="Name"
@@ -740,7 +743,7 @@ const Form = () => {
               <Controller
                 name="localGuardianAddress"
                 control={control}
-                rules={"Local Gurdians Address is required"}
+                rules={{ required: "Local Gurdians Address is required" }}
                 render={({ field }) => (
                   <TextField
                     label="Local Address"
@@ -1092,7 +1095,7 @@ const Form = () => {
                 rules={{ required: "Precentage field is required" }}
                 render={({ field }) => (
                   <TextField
-                    label="Precentage(%)achieved"
+                    label="Precentage(%) achieved"
                     fullWidth
                     type="text"
                     {...field}
