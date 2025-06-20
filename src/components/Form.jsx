@@ -1165,7 +1165,7 @@ const Form = () => {
         {/* === G. HOW DID YOU KNOW ABOUT GEF FIELDS === */}
         <Paper sx={{ mb: 4, p: 4 }}>
           <Typography variant="h6" sx={{ mb: 2, fontWeight: "bold" }}>
-            G. How did you now abouy GEF?
+            G. How did you now about GEF?
           </Typography>
           <Grid container spacing={2}>
             <Grid item size={{ xs: 12, md: 4 }}>

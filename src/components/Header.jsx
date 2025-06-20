@@ -11,7 +11,7 @@ const Header = () => {
         Greenfield National H.S. School
       </Typography>
       <Typography variant={isMobile ? "body1" : "h6"} color="text.secondary">
-        P.O. Box 21771, Balaju, Sitapaila, Kathmandu
+        P.O. Box 21771, Bafal, Sitapaila, Kathmandu
       </Typography>
       <Typography variant={isMobile ? "body1" : "h6"} color="text.secondary">
         Tel: 01-4302488, 4670816 | Email: gnc@greenfield.edu.np
